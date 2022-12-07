@@ -39,7 +39,7 @@ nav ul li{
     }
 
 nav ul li:hover{
-    font-size: 1.3em;  
+    font-size: 1.4em;  
 }
 
 
@@ -75,7 +75,7 @@ nav ul li:hover{
 
 #cortinas .textoantefooter{
     padding-top: 10%;
-    /* border: 3px solid #000; */
+    /* border: 3px solid rgb(255, 0, 0); */
 
 }
 
@@ -137,7 +137,8 @@ nav ul li:hover{
 }
 
 #cotizador .formcotizacion{
-    margin: auto;
+   width: 100%;
+   /* outline: 2px red solid; */
 
 }
 
