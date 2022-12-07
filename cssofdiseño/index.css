@@ -1,0 +1,490 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: acumin-pro, sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+
+	/* outline: red 5px solid; */
+}
+
+
+
+
+
+
+/* Barra de navegacion */
+nav{
+	width: 100%;
+}
+
+nav .logo{
+    padding-left: 13%;
+}
+
+nav ul{
+    width: 100%;
+	margin-left: 50%;
+    padding: 15px;
+}
+
+nav ul li{
+
+    font-size: 1.2em;
+    margin: 12px;
+    }
+
+nav ul li:hover{
+    font-size: 1.3em;  
+}
+
+
+
+
+
+
+
+
+
+
+/* Header */
+
+header{
+	height: 780px;
+	width: 100%;
+	background-image: url(../imagenes/imagen1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center ;
+	padding-top: 300px;
+	padding-left: 100px;
+}
+
+
+header p{
+	color: white ;
+    font-size: 1.3em;
+	margin-bottom: 80px;
+
+}
+
+header h1{
+	color: #17ABCE;
+    font-size: 3.2em;
+}
+
+
+
+
+
+
+
+
+
+/* Nosotros */
+
+.section1{
+	height: 700px;
+	display: flex;
+	width: 100%;
+    padding-top: 5%;
+}
+
+
+.section1 .marcosec1{
+	display: flex;
+	width: 50%;
+}
+
+.section1 .marcosec1 img{
+height: 100%;
+	padding: 30px;
+	padding-left: 0;
+	
+}
+
+.section1 .marco2sec1{
+	width: 50%;
+	padding-top: 80px;
+	padding-left: 20px;
+	padding-right: 40px;
+
+}
+
+.section1 .marco2sec1 h1{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+    font-size: 3em;
+	color: #17ABCE;
+
+}
+.section1 .marco2sec1 p{
+	width: 100%;
+	margin-bottom: 50px;
+    font-size: 1.2em;
+}
+.section1 .marco2sec1 a{
+	background-color: #1A7C87;
+	color: white;
+	text-decoration: none;
+    font-size: 1.2em;
+	padding: 6px 12px;
+}
+
+
+
+/* Nosotros 2 */
+
+
+
+.section2{
+	width: 100%;
+    
+	display: flex;
+
+    padding-top: 5%;
+}
+
+.section2 .marco-mision{
+	padding-right: 50px;
+	width: 50%;
+    padding-top: 20px;
+}
+
+
+.section2 .marco-mision h2{
+	text-align: center;
+	background-color: #1A7C87;
+	color: white;
+	width: 100%;
+    padding: 8px;
+    border-radius: 50px 193px 0px 0px / 0px 150px 0px 25px;
+}
+.section2 .marco-mision p{
+	width: 100%;
+	padding: 50px;
+}
+
+.section2 .marco-vision{
+	padding-left: 50px;
+	width: 50%;
+    padding-top: 20px;
+}
+
+.section2 .marco-vision h2{
+	text-align: center;
+	background-color: #1A7C87;
+	color: white;
+	width: 100%;
+    padding: 8px;
+    border-radius: 0px 0px 0px 190px / 0px 0px 0px 150px;
+}
+
+
+.section2 .marco-vision p{
+	width: 100%;
+	padding: 50px;
+}
+
+
+
+
+
+
+
+/* Valores corporativos */
+
+.valores{
+	width: 100%;
+    height: 400px;
+	padding-top: 50px;
+    /* padding-bottom: 8%; */
+}
+
+.valores .row{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+
+	justify-content: space-around;
+	align-items: center;
+}
+
+.valores .row .marcomodal{
+	display: flex;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	border: 5px solid #17ABCE;
+	border-radius: 50%;
+}
+
+
+.valores .row .marcomodal img{
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+}
+
+
+
+
+
+
+
+/* Contacto */
+
+.sobelo{
+    width: 100%;
+    height: 600px;
+	padding-top: 20px;
+    padding-bottom: 10%;
+}
+
+.marco-contacto{
+    /* outline: red 2px solid; */
+    width: 100%;
+    height: 100%;
+}
+
+.marco-contacto img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.contacenviar{
+	background-color:  #1A7C87;
+	color: white;
+
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/*footer  */
+
+footer{
+    background-color: #012c27;
+    height: auto;
+}
+
+footer .iconos2 i{
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 2em;
+}
+footer .iconos2 a i{
+    color: aliceblue;
+    font-size: 2em;
+}
+footer .iconos2 h2{
+    color: rgb(4, 177, 207);
+    font-size: 2.2em;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+	/* nosotros */
+
+	.section1{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		padding-top: 5%;
+		height: 100%;
+	}
+
+	.section1 .marcosec1{
+		display: flex;
+		width: 100%;
+
+	
+	} 
+
+	.section1 .marco2sec1{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.section1 .marcosec1 img{
+		width: 100%;
+			padding: 0px;
+			
+	}
+
+	.section1 .marco2sec1 a{
+		padding: 15px;
+	}
+
+	/* nosottos section2 */
+
+	.section2{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	
+		padding-top: 5%;
+	}
+
+	.section2 .marco-mision{
+		padding-right: 50px;
+		width: 100%;
+		padding-top: 20px;
+	}
+
+	.section2 .marco-vision{
+		padding-left: 50px;
+		width: 100%;
+		padding-top: 20px;
+	}
+
+
+
+
+
+	/* Valores */
+
+	.iconos-valores{
+		margin-bottom: 30px;
+	}
+
+	.valores{
+		width: 100%;
+		height: 100%;
+		padding-top: 50px;
+		/* padding-bottom: 8%; */
+	}
+
+
+
+
+
+	/* Contacto */
+
+	.sobelo{
+		width: 100%;
+		height: 600px;
+		padding-bottom: 5%;
+	}
+
+	.marco-contacto{
+		/* outline: red 2px solid; */
+		width: 100%;
+		height: 100%;
+		display: none;
+	}
+
+	/* Footer */
+
+	footer{
+		background-color: #012c27;
+		height: auto;
+	}
+	
+	footer .texto1footer{
+		display: flex;
+	}
+	footer .texto1footer img{
+		margin: auto;
+	}
+
+	footer .texto1footer p{
+		margin: auto;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+   
+  }
+
+
+
+
+  @media only screen and (max-width: 576px) {
+	  
+	/* Barra de navegacion */
+
+	nav .logo{
+		width: 30%;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+
+
+	/* Footer */
+
+	footer{
+		background-color: #012c27;
+		height: auto;
+	}
+	
+	footer .iconos2 i{
+		padding-top: 20px;
+		padding-left: 15px;
+		font-size: 2em;
+	}
+	footer .iconos2 a i{
+		color: aliceblue;
+		font-size: 2em;
+	}
+	footer .iconos2 h2{
+		color: rgb(4, 177, 207);
+		font-size: 2.2em;
+		display: none;
+		
+	}
+	.footer-p{
+        display: none;
+    }
+
+	.texto1footer{
+		display: flex;
+		justify-content: center;
+	}
+  
+  }

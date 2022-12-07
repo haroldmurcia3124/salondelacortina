@@ -1,0 +1,312 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+    font-family: acumin-pro, sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+
+	/* outline: red 5px solid; */
+}
+
+
+
+
+
+/* Barra de navegacion */
+
+nav{
+	width: 100%;
+}
+
+nav .logo{
+    padding-left: 13%;
+}
+
+nav ul{
+    width: 100%;
+	margin-left: 50%;
+    padding: 15px;
+}
+
+nav ul li{
+
+    font-size: 1.2em;
+    margin: 12px;
+    }
+
+nav ul li:hover{
+    font-size: 1.3em;  
+}
+
+
+
+
+
+/* Cortinas */
+
+#instalacion{
+    height: 150px;
+    background-image: url(../imagenes/instalacion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#instalacion h2{
+    color: rgb(7, 186, 199);
+}
+#instalacion p{
+    color: rgb(7, 186, 199);
+}
+
+#cortinas button{
+    /* border: 3px solid #000; */
+   
+}
+#cortinas button a{
+    background-color: #085f55;
+    color: white;
+   
+}
+
+#cortinas .textoantefooter{
+    padding-top: 10%;
+    /* border: 3px solid #000; */
+
+}
+
+#cortinas .textoantefooter a{
+    background-color: #085f55;
+
+}
+
+#cortinas .textoantefooter p{
+	text-align: left;
+	margin: 30px;
+}
+
+#cortinas .textoantefooter h3{
+    padding-top: 15px;
+}
+
+#cortinas .textoantefooter .marco-velo{
+    width: 68%;
+    height: 100%;
+
+    margin: auto;
+}
+
+#cortinas .textoantefooter .marco-black{
+    width: 77%;
+    height: 100%;
+
+    margin: auto;
+}
+
+#cortinas .textoantefooter .marco-enrro{
+    width: 67%;
+    height: 100%;
+
+    margin: auto;  
+}
+
+
+
+/* cotizador */
+
+#cotizador .contegen{
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+}
+
+#cotizador .marco{
+    margin: auto;    
+	/* outline: red 2px solid; */
+}
+
+#cotizador .marco2img img{
+    transition: .2s;    
+	
+}
+
+#cotizador .formcotizacion{
+    margin: auto;
+
+}
+
+#cotizador .muestras img{
+    transition: .3s;
+
+    width: 10%;
+    background-color: red;
+}
+
+#cotizador .muestras img:hover{
+    width: 8%;
+}
+
+#cotizador .formcotizacion button{
+    background-color:  #012c27;
+    color: white;
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-bottom: 5%;
+  
+    
+}
+
+/* cotizador */
+
+#cotizador{
+	margin-top: 2%;
+}
+
+#cotizador .dentro{
+    display: flex;
+}
+
+#cotizador .anch{
+    display: flex;
+}
+
+#cotizador .anch .ancho{
+    width: 250px;
+    margin-left: 10px;
+}
+
+#cotizador .anch .largo{
+    width: 250px;
+    margin-left: 10px;
+}
+
+
+#cotizador .mango{
+    display: flex;
+}
+
+#cotizador .mango .izquierdo{
+    margin-left: 10%;
+
+}
+
+#cotizador .mango .derecho{
+    margin-left: 20px;
+
+}
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    background-color: #012c27;
+    height: auto;
+}
+
+footer .iconos2 i{
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 2em;
+}
+footer .iconos2 a i{
+    color: aliceblue;
+    font-size: 2em;
+}
+footer .iconos2 h2{
+    color: rgb(4, 177, 207);
+    font-size: 2.2em;
+    
+} 
+
+
+
+@media only screen and (max-width: 992px) {
+    
+    	/* Footer */
+
+	footer{
+		background-color: #012c27;
+        width: 100%;
+		height: auto;
+	}
+	
+	footer .texto1footer{
+		display: flex;
+	}
+	footer .texto1footer img{
+		margin: auto;
+	}
+
+	footer .texto1footer p{
+		margin: auto;
+	}
+
+  }
+
+
+
+@media only screen and (max-width: 768px) {
+    #cortinas .imagenfooter{
+        margin-left: 11%;
+
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+
+    /* Barra de navegacion */
+
+	nav .logo{
+		width: 20%;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+
+
+    
+    /* footer */
+
+    footer{
+		background-color: #012c27;
+		height: auto;
+        width: 100%;
+	}
+	
+	footer .iconos2 i{
+		padding-top: 20px;
+		padding-left: 15px;
+		font-size: 2em;
+	}
+	footer .iconos2 a i{
+		color: aliceblue;
+		font-size: 2em;
+	}
+	footer .iconos2 h2{
+		color: rgb(4, 177, 207);
+		font-size: 2.2em;
+		display: none;
+		
+	}
+	.footer-p{
+        display: none;
+    }
+
+	.texto1footer{
+		display: flex;
+		justify-content: center;
+	}
+
+
+  }
