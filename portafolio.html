@@ -92,9 +92,9 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title col-10" id="persiana">
-                  Persiana
+                  persiana
                   </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button"  class="btn-close" data-bs-dismiss="modal" aria-label="Close" class=""></button>
               </div>
               <form action="" class="col-12">
                 <div class="modal-body row">
@@ -110,22 +110,21 @@
                       <div class="formcotizacion col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <form>
                         
-                          <div class="coloresobligatorios pt-2 pb-3 ps-4">
-                            <input type="hidden" name="uno" class="w-100">
-                            <label for="exampleInputColor1">Color</label>
-                            <div class="muestras">
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                  
+                            <div class="pt-3 pb-3 ps-4">
+
+                              <input type="hidden" name="uno" class="w-100">
+                              <label for="exampleInputColor1"><h4>Color</h4></label>
+  
+                              <div class="muestras">
+                                <input type="color" name="color">                    
+                              </div>
                             </div>
-                          </div>
-                            <br>
+
+                          <hr>
+
                           <div class=" form-group ps-3">
                             
                             <h4> Marco de la ventana</h4>
-                            <br>
                                 <div>
                                     <input type="checkbox" class="form-check-input" name="dos" id="exampleCheck1">
                                     <label class="form-check-label" for="exampleCheck1">Por <b>dentro</b>  del marco</label>
@@ -153,30 +152,32 @@
                 
                         </div>
                 
-                        <br>
+                        <hr>
                 
-                          <div class="form-group ps-2">
-                              <h4>Ubicación del carriel</h4>
-                             
-                              <div class="mango">
-                                <div class="izquierdo">
-                                    <input type="checkbox" name="seis" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">izquierdo</label>
-                                </div>
-                
-                                <div class="derecho">               
-                                    <input type="checkbox" name  class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Derecho  </label>
-                                </div>
-                
+                        <div class=" ps-2">
+                          <h4>Ubicación del carriel</h4>
+                         
+                          <div class="mango">
+                            <div class="izquierdo">
+                                <input type="radio" name="seis"  id="escoja" value="izquierdo">
+                                <label for="escoja">izquierdo</label>
                             </div>
-                          </div>
+            
+                            <div class="derecho">               
+                                <input type="radio" name="seis"  id="escoja" value="derecho">
+                                <label for="escoja">Derecho  </label>
+                            </div>
+            
+                        </div>
+                      </div>
                         </form>
                       </div>
                     </div>
                     </div>
                   </form>
                 </section>
+
+                
                   <div class="modal-footer btn-modal colorbotton">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#cotzador_modal" class="btn-close" aria-label="Close" onclick="add('nombre_de_formaulario')">COTIZAR</button>
@@ -208,9 +209,9 @@
           <div class="modal-dialog col-12">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title col-10" id="velos">
+                <h2 class="modal-title col-10" id="velos">
                   Velos
-                  </h5>
+                  </h2>
                 <button type="button"  class="btn-close" data-bs-dismiss="modal" aria-label="Close" class=""></button>
               </div>
               <form action="" class="col-12">
@@ -227,34 +228,29 @@
                       <div class="formcotizacion col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         
                         
-                          <div class="coloresobligatorios pt-3 pb-3 ps-4">
+                          <div class="pt-3 pb-3 ps-4">
 
                             <input type="hidden" name="uno" class="w-100">
-                            <label for="exampleInputColor1">Color</label>
+                            <label for="exampleInputColor1"><h4>Color</h4></label>
 
                             <div class="muestras">
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                  
+                              <input type="color" name="color">                    
                             </div>
                           </div>
+
+                          <hr>
                            
                           <div class=" form-group ps-3">
-                            <br>
                             <h4> Marco de la ventana</h4>
                             
-                                <div>
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="dos">
+                                <div class="fueden">   
 
-                                    <label class="form-check-label" for="exampleCheck1">Por <b>dentro</b>  del marco</label>
-                                </div>
-                                    
-                                <div>
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="tres">
+                                    <input id="dentro" type="radio" name="dos" value="dentro">
+                                    <label for="dentro">Por <b>dentro</b> del marco</label>
+                                    <br>
+                                    <input id="dentro" type="radio" name="dos" value="fuera">
+                                    <label for="dentro">Por <b>fuera</b> del marco</label>
 
-                                    <label class="form-check-label" for="exampleCheck1">Por <b>Fuera</b>  del marco</label>
                                 </div>
                           </div>
                 
@@ -274,21 +270,21 @@
                 
                         </div>
                 
-                        <br>
+                          <hr>
                         
                 
-                          <div class="form-group ps-2">
+                          <div class=" ps-2">
                               <h4>Ubicación del carriel</h4>
-                              <br>
+                             
                               <div class="mango">
                                 <div class="izquierdo">
-                                    <input type="checkbox" name="seis" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">izquierdo</label>
+                                    <input type="radio" name="seis"  id="escoja" value="izquierdo">
+                                    <label for="escoja">izquierdo</label>
                                 </div>
                 
                                 <div class="derecho">               
-                                    <input type="checkbox" name="siete" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Derecho  </label>
+                                    <input type="radio" name="seis"  id="escoja" value="derecho">
+                                    <label for="escoja">Derecho  </label>
                                 </div>
                 
                             </div>
@@ -412,34 +408,30 @@
                       <div class="formcotizacion col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <form>
                         
-                          <div class="coloresobligatorios pt-3 pb-3 ps-4">
-                            
-                            <label for="exampleInputColor1">Color</label>
+                          <div class="pt-3 pb-3 ps-4">
+
                             <input type="hidden" name="uno" class="w-100">
+                            <label for="exampleInputColor1"><h4>Color</h4></label>
 
                             <div class="muestras">
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                  
+                              <input type="color" name="color">                    
                             </div>
                           </div>
+
+
+                          <hr>
                            
                           <div class=" form-group ps-3">
-                            <br>
                             <h4> Marco de la ventana</h4>
                             
-                                <div>
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="dos">
+                                <div class="fueden">   
 
-                                    <label class="form-check-label" for="exampleCheck1">Por <b>dentro</b>  del marco</label>
-                                </div>
-                                    
-                                <div>
-                                    <input type="checkbox" class="form-check-input"  id="exampleCheck1" name="tres">
+                                    <input id="dentro" type="radio" name="dos" value="dentro">
+                                    <label for="dentro">Por <b>dentro</b> del marco</label>
+                                    <br>
+                                    <input id="dentro" type="radio" name="dos" value="fuera">
+                                    <label for="dentro">Por <b>fuera</b> del marco</label>
 
-                                    <label class="form-check-label" for="exampleCheck1">Por <b>Fuera</b>  del marco</label>
                                 </div>
                           </div>
                 
@@ -459,25 +451,24 @@
                 
                         </div>
                 
-                        <br>
-                       
+                          <hr>
                 
-                          <div class="form-group ps-2">
-                              <h4>Ubicación del carriel</h4>
-                              <br>
-                              <div class="mango">
-                                <div class="izquierdo">
-                                    <input type="checkbox" class="form-check-input" name="seis" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">izquierdo</label>
-                                </div>
-                
-                                <div class="derecho">               
-                                    <input type="checkbox" class="form-check-input" name="siete" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Derecho  </label>
-                                </div>
-                
-                            </div>
+                          <div class=" ps-2">
+                            <h4>Ubicación del carriel</h4>
+                           
+                            <div class="mango">
+                              <div class="izquierdo">
+                                  <input type="radio" name="seis"  id="escoja" value="izquierdo">
+                                  <label for="escoja">izquierdo</label>
+                              </div>
+              
+                              <div class="derecho">               
+                                  <input type="radio" name="seis"  id="escoja" value="derecho">
+                                  <label for="escoja">Derecho  </label>
+                              </div>
+              
                           </div>
+                        </div>
                         </form>
                       </div>
                     </div>
@@ -536,34 +527,30 @@
                       <div class="formcotizacion col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <form>
                         
-                          <div class="coloresobligatorios pt-3 pb-3 ps-4">
+                          <div class="pt-3 pb-3 ps-4">
 
-                            <label for="exampleInputColor1">Color</label>
                             <input type="hidden" name="uno" class="w-100">
+                            <label for="exampleInputColor1"><h4>Color</h4></label>
 
                             <div class="muestras">
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                  
+                              <input type="color" name="color">                    
                             </div>
                           </div>
-                          
-                          <div class=" form-group ps-3">
-                            <br>
-                            <h4> Marco de la ventana</h4>
+
+
+                          <hr>
                            
-                                <div>
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="dos">
+                          <div class=" form-group ps-3">
+                            <h4> Marco de la ventana</h4>
+                            
+                                <div class="fueden">   
 
-                                    <label class="form-check-label" for="exampleCheck1">Por <b>dentro</b>  del marco</label>
-                                </div>
-                                    
-                                <div>
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="tres">
+                                    <input id="dentro" type="radio" name="dos" value="dentro">
+                                    <label for="dentro">Por <b>dentro</b> del marco</label>
+                                    <br>
+                                    <input id="dentro" type="radio" name="dos" value="fuera">
+                                    <label for="dentro">Por <b>fuera</b> del marco</label>
 
-                                    <label class="form-check-label" for="exampleCheck1">Por <b>Fuera</b>  del marco</label>
                                 </div>
                           </div>
                 
@@ -583,25 +570,25 @@
                 
                         </div>
                 
-                        <br>
+                        <hr>
                         
                 
-                          <div class="form-group ps-2">
-                              <h4>Ubicación del carriel</h4>
-                              <br>
-                              <div class="mango">
-                                <div class="izquierdo">
-                                    <input type="checkbox" class="form-check-input" name="seis" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">izquierdo</label>
-                                </div>
-                
-                                <div class="derecho">               
-                                    <input type="checkbox" class="form-check-input" name="siete " id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Derecho  </label>
-                                </div>
-                
+                        <div class=" ps-2">
+                          <h4>Ubicación del carriel</h4>
+                         
+                          <div class="mango">
+                            <div class="izquierdo">
+                                <input type="radio" name="seis"  id="escoja" value="izquierdo">
+                                <label for="escoja">izquierdo</label>
                             </div>
-                          </div>
+            
+                            <div class="derecho">               
+                                <input type="radio" name="seis"  id="escoja" value="derecho">
+                                <label for="escoja">Derecho  </label>
+                            </div>
+            
+                        </div>
+
                         </form>
                       </div>
                     </div>
@@ -654,32 +641,30 @@
                       <div class="formcotizacion col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <form>
                         
-                          <div class="coloresobligatorios pt-3 pb-3 ps-4">
+                          <div class="pt-3 pb-3 ps-4">
 
-                            <label for="exampleInputColor1">Color</label>
                             <input type="hidden" name="uno" class="w-100">
-                            
+                            <label for="exampleInputColor1"><h4>Color</h4></label>
+
                             <div class="muestras">
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                  
+                              <input type="color" name="color">                    
                             </div>
                           </div>
-                            
-                          <div class=" form-group ps-3">
-                            <br>
-                            <h4> Marco de la ventana</h4>
+
+
+                          <hr>
                            
-                                <div>
-                                    <input type="checkbox" class="form-check-input" name="dos" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Por <b>dentro</b>  del marco</label>
-                                </div>
-                                    
-                                <div>
-                                    <input type="checkbox" class="form-check-input" name="tres" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Por <b>Fuera</b>  del marco</label>
+                          <div class=" form-group ps-3">
+                            <h4> Marco de la ventana</h4>
+                            
+                                <div class="fueden">   
+
+                                    <input id="dentro" type="radio" name="dos" value="dentro">
+                                    <label for="dentro">Por <b>dentro</b> del marco</label>
+                                    <br>
+                                    <input id="dentro" type="radio" name="dos" value="fuera">
+                                    <label for="dentro">Por <b>fuera</b> del marco</label>
+
                                 </div>
                           </div>
                 
@@ -699,25 +684,25 @@
                 
                         </div>
                 
-                        <br>
+                        <hr>
                         
                 
-                          <div class="form-group ps-2">
-                              <h4>Ubicación del carriel</h4>
-                              <br>
-                              <div class="mango">
-                                <div class="izquierdo">
-                                    <input type="checkbox" class="form-check-input" name="seis" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">izquierdo</label>
-                                </div>
-                
-                                <div class="derecho">               
-                                    <input type="checkbox" class="form-check-input" name="siete" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Derecho  </label>
-                                </div>
-                
+                        <div class=" ps-2">
+                          <h4>Ubicación del carriel</h4>
+                         
+                          <div class="mango">
+                            <div class="izquierdo">
+                                <input type="radio" name="seis"  id="escoja" value="izquierdo">
+                                <label for="escoja">izquierdo</label>
                             </div>
-                          </div>
+            
+                            <div class="derecho">               
+                                <input type="radio" name="seis"  id="escoja" value="derecho">
+                                <label for="escoja">Derecho  </label>
+                            </div>
+            
+                        </div>
+
                         </form>
                       </div>
                     </div>
@@ -772,37 +757,35 @@
                       <div class="formcotizacion col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <form>
                         
-                          <div class="coloresobligatorios pt-3 pb-3 ps-4">
+                          <div class="pt-3 pb-3 ps-4">
 
-                            <label for="exampleInputColor1">Color</label>
                             <input type="hidden" name="uno" class="w-100">
+                            <label for="exampleInputColor1"><h4>Color</h4></label>
 
                             <div class="muestras">
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                              <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                  
+                              <input type="color" name="color">                    
                             </div>
                           </div>
-                            
+
+
+                          <hr>
+                           
                           <div class=" form-group ps-3">
-                            <br>
                             <h4> Marco de la ventana</h4>
                             
-                                <div>
-                                    <input type="checkbox" class="form-check-input" name="dos" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Por <b>dentro</b>  del marco</label>
-                                </div>
-                                    
-                                <div>
-                                    <input type="checkbox" class="form-check-input" name="tres" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Por <b>Fuera</b>  del marco</label>
+                                <div class="fueden">   
+
+                                    <input id="dentro" type="radio" name="dos" value="dentro">
+                                    <label for="dentro">Por <b>dentro</b> del marco</label>
+                                    <br>
+                                    <input id="dentro" type="radio" name="dos" value="fuera">
+                                    <label for="dentro">Por <b>fuera</b> del marco</label>
+
                                 </div>
                           </div>
                 
                             <br>
-                           
+                            
                 
                         <div class="anch ">        
                           <div class="form-group ancho">
@@ -817,25 +800,24 @@
                 
                         </div>
                 
-                        <br>
-                       
+                        <hr>
+                        
                 
-                          <div class="form-group ps-2">
-                              <h4>Ubicación del carriel</h4>
-                              <br>
-                              <div class="mango">
-                                <div class="izquierdo">
-                                    <input type="checkbox" name="seis" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">izquierdo</label>
-                                </div>
-                
-                                <div class="derecho">               
-                                    <input type="checkbox" name="siete" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Derecho  </label>
-                                </div>
-                
+                        <div class=" ps-2">
+                          <h4>Ubicación del carriel</h4>
+                         
+                          <div class="mango">
+                            <div class="izquierdo">
+                                <input type="radio" name="seis"  id="escoja" value="izquierdo">
+                                <label for="escoja">izquierdo</label>
                             </div>
-                          </div>
+            
+                            <div class="derecho">               
+                                <input type="radio" name="seis"  id="escoja" value="derecho">
+                                <label for="escoja">Derecho  </label>
+                            </div>
+            
+                        </div>
                         </form>
                       </div>
                     </div>
@@ -894,37 +876,35 @@
                         <div class="formcotizacion col-xl-6 col-lg-6 col-md-12 col-sm-12">
                           <form>
                           
-                            <div class="coloresobligatorios pt-3 pb-3 ps-4">
+                            <div class="pt-3 pb-3 ps-4">
 
-                              <label for="exampleInputColor1">Color</label>
                               <input type="hidden" name="uno" class="w-100">
-                              
+                              <label for="exampleInputColor1"><h4>Color</h4></label>
+  
                               <div class="muestras">
-                                <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                                <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                                <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                                <a href=""><img src="imagenes/azul.png" alt="" width="8%"></a>
-                    
+                                <input type="color" name="color">                    
                               </div>
                             </div>
-                              
+  
+  
+                            <hr>
+                             
                             <div class=" form-group ps-3">
-                              <br>
                               <h4> Marco de la ventana</h4>
                               
-                                  <div>
-                                      <input type="checkbox" class="form-check-input" name="dos" id="exampleCheck1">
-                                      <label class="form-check-label" for="exampleCheck1">Por <b>dentro</b>  del marco</label>
-                                  </div>
-                                      
-                                  <div>
-                                      <input type="checkbox" class="form-check-input" name="tres" id="exampleCheck1">
-                                      <label class="form-check-label" for="exampleCheck1">Por <b>Fuera</b>  del marco</label>
+                                  <div class="fueden">   
+  
+                                      <input id="dentro" type="radio" name="dos" value="dentro">
+                                      <label for="dentro">Por <b>dentro</b> del marco</label>
+                                      <br>
+                                      <input id="dentro" type="radio" name="dos" value="fuera">
+                                      <label for="dentro">Por <b>fuera</b> del marco</label>
+  
                                   </div>
                             </div>
                   
                               <br>
-                           
+                              
                   
                           <div class="anch ">        
                             <div class="form-group ancho">
@@ -939,25 +919,24 @@
                   
                           </div>
                   
-                          <br>
-                       
+                          <hr>
+                          
                   
-                            <div class="form-group ps-2">
-                                <h4>Ubicación  del carriel</h4>
-                                <br>
-                                <div class="mango">
-                                  <div class="izquierdo">
-                                      <input type="checkbox" class="form-check-input" name="seis" id="exampleCheck1">
-                                      <label class="form-check-label" for="exampleCheck1">izquierdo</label>
-                                  </div>
-                  
-                                  <div class="derecho">               
-                                      <input type="checkbox" class="form-check-input" name="siete" id="exampleCheck1">
-                                      <label class="form-check-label" for="exampleCheck1">Derecho  </label>
-                                  </div>
-                  
+                          <div class=" ps-2">
+                            <h4>Ubicación del carriel</h4>
+                           
+                            <div class="mango">
+                              <div class="izquierdo">
+                                  <input type="radio" name="seis"  id="escoja" value="izquierdo">
+                                  <label for="escoja">izquierdo</label>
                               </div>
-                            </div>
+              
+                              <div class="derecho">               
+                                  <input type="radio" name="seis"  id="escoja" value="derecho">
+                                  <label for="escoja">Derecho  </label>
+                              </div>
+              
+                          </div>
                           </form>
                         </div>
                       </div>
@@ -985,43 +964,51 @@
 
 
   <!-- Footer -->
-
 <footer class="text-light footer-dark">
 
-	<div class="container">
-	  <div class="row">
-		<div class="texto1footer col-xxl-6 col-xl-6 col-lg-6 col-md-12  text-light mt-5">
-		  <br>
-		  <img src="imagenes/logo_larog.png">
-		  <br>
-		  <br>
-		  <p class="footer-p">El diseño & la decoración van de la mano con <br> la clase y el buen gusto </p>
-		</div>
-
-	  
-		<div class="iconos2 col-xxl-6 col-xl-6 col-lg-6 col-md-12 mt-5 text-center">
-
-
-		  <h2>Salón de la cortina</h2>
-
-			<br>
-
-		  <i class="fa-brands fa-instagram  text-light"></i> Salóndelacortina <br>
-		  <i class="fa-brands fa-facebook text-light"></i> Salóndelacortina
-		  <br>
-		  <br>
-		  
-		  
-		</div>
-	  </div>
-	</div>
-
-	<div class="iconos2 col-3 text-light">
-	  </div>
+  <div class="container">
+    <div class="row">
+    <div class="texto1footer col-xxl-6 col-xl-6 col-lg-6 col-md-12  text-light mt-5">
+      <br>
+      <img src="imagenes/logo_larog.png">
+      <br>
+      <br>
+      <p class="footer-p">El diseño & la decoración van de la mano con   <br>la clase y el buen gusto </p>
+    </div>
+  
+      
+    <div class="iconos2 col-xxl-6 col-xl-6 col-lg-6 col-md-12 mt-5 text-center">
+  
+  
+      
+      <h2>información de contacto</h2>
+  
+      <br>
+    <div class="info">
+      <div class="col-12">
+        <i class="fa-solid fa-envelope text-light"></i>
+        <a>Salóndelacortina@gmail.com</a>
+      </div> 
+                  <br>
+      <div class="col-12">
+        <i class="fa-solid fa-phone text-light  "></i><a>+57 31927837955</a> 
+      </div>
+    </div>
+      <br>
+      <br>
+  
+    <div class="  col-12">
+      <i class="fa-brands fa-facebook p-2"></i><i class="fa-brands fa-instagram p-2"></i></a>
+    </div>
+        
+    </div>
+    </div>
+  </div>
   </footer>
+  
 
-
-    <script src="https://kit.fontawesome.com/4b11d78e14.js" crossorigin="anonymous"></script>
-    <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+   
 </body>
+      <script src="https://kit.fontawesome.com/4b11d78e14.js" crossorigin="anonymous"></script>
+      <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
 </html>
